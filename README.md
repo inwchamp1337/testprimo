@@ -40,7 +40,7 @@ curl -X POST http://localhost:3000/merge \
 ```
 
 test ex : 
-![alt text](image-1.png)
+![alt text](image.png)
 
 Built With
 Bun - JavaScript runtime & package manager
