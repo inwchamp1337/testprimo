@@ -1,19 +1,22 @@
 # Array Merge API
 
-Simple TypeScript API that merges and sorts three arrays using Elysia and Bun.
+Merge โดยใช้ Algorithm Merge Sort โดยมี Complexity:O(n log n)
+
 
 ## 🚀 Quick Start
-
+### execute code and unit test
 ```bash
 # Install dependencies
 bun install
-
+```
+```bash
 # Run the server
 bun run dev
-
+```
+```bash
 # Run tests
 bun test
-
+```
 
 Project Structure
 ts-merge-project/
