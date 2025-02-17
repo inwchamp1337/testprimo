@@ -1,6 +1,6 @@
 # Array Merge API
 
-O(N) linear time ใช้ได้เฉพาะที่ โจทย์กำหนดมา collection_1,collection_2 เรียงมากไปน้อย และ collection_3 จากน้อยไปมาก 
+O(N) linear time ใช้ได้เฉพาะที่ โจทย์กำหนดมา collection_1,collection_2 เรียงจากน้อยไปมาก และ collection_3 จากมากไปน้อย
 โดยทำงานจาก reverse collection_3  และนำมา Merge กันเลย 2 รอบ 
 
 
