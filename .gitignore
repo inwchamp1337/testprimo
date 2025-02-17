@@ -1,0 +1,33 @@
+# Add these to your existing .gitignore
+
+# Bun
+bun.lockb
+
+# Build output
+build/
+dist/
+
+# Test coverage
+coverage/
+
+# Environment variables
+.env*
+
+# Editor specific
+.vscode/
+*.code-workspace
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+*.tmp
+*~
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Debug logs
+debug/
+*.debug.log
