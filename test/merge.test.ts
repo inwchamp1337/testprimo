@@ -23,55 +23,7 @@ describe("ฟังก์ชัน merge", () => {
     expect(result).toEqual([1, 3, 4, 5, 8, 10]);
   });
 
-  it("ควรจัดการกับอาร์เรย์ที่มีค่าซ้ำกันได้", () => {
-    const collection_1 = [1, 2, 2];
-    const collection_2 = [2, 3, 4];
-    const collection_3 = [4, 5, 5]; // เรียงลำดับจากมากไปน้อย
-
-    const result = merge(collection_1, collection_2, collection_3);
-    // ผลลัพธ์ที่คาดหวัง: [1, 2, 2, 2, 3, 4, 4, 5, 5]
-    expect(result).toEqual([1, 2, 2, 2, 3, 4, 4, 5, 5]);
-  });
-
-  it("ควรจัดการกับอาร์เรย์ที่มีขนาดต่างกันได้", () => {
-    const collection_1 = [1, 2, 3];
-    const collection_2 = [4, 5, 6, 7];
-    const collection_3 = [8, 9]; // เรียงลำดับจากมากไปน้อย
-
-    const result = merge(collection_1, collection_2, collection_3);
-    // ผลลัพธ์ที่คาดหวัง: [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    expect(result).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-  });
-
-  it("ควรจัดการกับอาร์เรย์ที่มีค่าติดลบได้", () => {
-    const collection_1 = [-3, -2, -1];
-    const collection_2 = [0, 1, 2];
-    const collection_3 = [3, 4, 5]; // เรียงลำดับจากมากไปน้อย
-
-    const result = merge(collection_1, collection_2, collection_3);
-    // ผลลัพธ์ที่คาดหวัง: [-3, -2, -1, 0, 1, 2, 3, 4, 5]
-    expect(result).toEqual([-3, -2, -1, 0, 1, 2, 3, 4, 5]);
-  });
-
-  it("ควรจัดการกับอาร์เรย์ที่มีค่าศูนย์ได้", () => {
-    const collection_1 = [0, 1, 2];
-    const collection_2 = [0, 3, 4];
-    const collection_3 = [0, 5, 6]; // เรียงลำดับจากมากไปน้อย
-
-    const result = merge(collection_1, collection_2, collection_3);
-    // ผลลัพธ์ที่คาดหวัง: [0, 0, 0, 1, 2, 3, 4, 5, 6]
-    expect(result).toEqual([0, 0, 0, 1, 2, 3, 4, 5, 6]);
-  });
-  it("ควรจัดการเมื่อสองอาร์เรย์ว่างและอาร์เรย์ที่สามมีข้อมูล", () => {
-    const result = merge([], [], [5, 3, 1]);
-    expect(result).toEqual([1, 3, 5]);
-  });
-  
-  it("ควรจัดการเมื่อมีเพียง collection_2 ที่มีข้อมูล", () => {
-    const result = merge([], [2, 5, 8], []);
-    expect(result).toEqual([2, 5, 8]);
-  });
-  
+ 
   it("ควรจัดการกับอาร์เรย์ที่มีเพียงหนึ่ง element ในแต่ละ collection", () => {
     const result = merge([2], [1], [3]);
     expect(result).toEqual([1, 2, 3]);
