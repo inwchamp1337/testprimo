@@ -1,4 +1,4 @@
-# Array Merge API
+#Two Way MergeSort API
 
 O(N) linear time ใช้ได้เฉพาะที่ array ที่อยู่ในเงื่อนไข collection_1,collection_2 เรียงจากน้อยไปมาก และ collection_3 จากมากไปน้อยเท่านั้น ( โจทย์กำหนดมา collection_1,collection_2 เรียงจากน้อยไปมาก และ collection_3 จากมากไปน้อย )
 
